@@ -3,5 +3,6 @@
 # cat l2.api.json
 # cat interface.api.json
 
-gcc vppclient.c -o client.o -lvppinfra -lvlibmemoryclient -lsvm
-sudo ./client.o
+gcc -g -O0 vppclient.c -o vppclient -lvppinfra -lvlibmemoryclient -lsvm
+
+gcc -g -O0 -o vapi_client -lvppinfra -lvlibmemoryclient -lsvm -lvapiclient
